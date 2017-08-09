@@ -34,6 +34,7 @@ namespace Stripe.Tests.Xunit
             };
 
             ChargeUpdateOptions.Shipping.Phone = "8675309";
+            ChargeUpdateOptions.Shipping.TrackingNumber = "56789";
 
             UpdatedCharge = service.Update(Charge.Id, ChargeUpdateOptions);
         }
